@@ -74,7 +74,7 @@ define nfs::client::mount (
   $server,
   $share            = undef,
   $ensure           = 'mounted',
-  $mount            = $title,
+  $mount            = $share,
   $remounts         = false,
   $atboot           = false,
   $options_nfsv4    = $::nfs::client_nfsv4_options,
